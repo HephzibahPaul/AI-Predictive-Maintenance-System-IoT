@@ -103,6 +103,7 @@ Sensor Data (IoT Inputs)
 → Streamlit Dashboard (Visualization & User Interface)
 
 This architecture enables real-time predictive maintenance using IoT sensor data and machine learning models.
+
 ---
 
 ## ⚙️ Installation
