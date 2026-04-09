@@ -93,10 +93,18 @@ The dataset contains sensor readings used for predictive maintenance:
 
 ## 🏗️ Architecture
 
-Sensor Data → Preprocessing → Feature Engineering →  
-Random Forest Model → LSTM Model →  
-Prediction (Failure / Normal) → Flask API → Streamlit Dashboard
+## 🏗️ Architecture
 
+Sensor Data (IoT Inputs)  
+→ Data Preprocessing  
+→ Feature Engineering  
+→ Random Forest Model (Baseline Prediction)  
+→ LSTM Model (Time-Series Analysis)  
+→ Prediction (Failure / Normal)  
+→ Flask API (Backend Service)  
+→ Streamlit Dashboard (Visualization & User Interface)
+
+This architecture enables real-time predictive maintenance using IoT sensor data and machine learning models.
 ---
 
 ## ⚙️ Installation
