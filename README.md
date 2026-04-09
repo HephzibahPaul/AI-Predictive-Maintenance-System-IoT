@@ -27,7 +27,7 @@ Problems:
 - High maintenance costs
 - Production downtime
 
-👉 Solution:
+👉 Solution:  
 This system predicts failures in advance using sensor data such as:
 - Temperature
 - Vibration
@@ -71,9 +71,11 @@ Benefits:
 
 ---
 
-## 📊 Dataset
+## 📊 Dataset (Simulated IoT Sensor Data)
 
 This project uses a **simulated IoT sensor dataset**.
+
+The dataset contains sensor readings used for predictive maintenance:
 
 ### Features:
 - Temperature → detects overheating
@@ -84,28 +86,16 @@ This project uses a **simulated IoT sensor dataset**.
 - Failure (0 = Normal, 1 = Failure)
 
 ### Dataset Type:
-- Time-series data for LSTM model
-- Tabular data for Random Forest
+- Time-series data for LSTM model  
+- Tabular data for Random Forest  
 
 ---
 
 ## 🏗️ Architecture
-Sensor Data (Dataset)
-↓
-Preprocessing
-↓
-Feature Engineering
-↓
-Random Forest Model (Baseline)
-↓
-LSTM Model (Time-Series)
-↓
-Prediction (Failure / Normal)
-↓
-Flask API
-↓
-Streamlit Dashboard
 
+Sensor Data → Preprocessing → Feature Engineering →  
+Random Forest Model → LSTM Model →  
+Prediction (Failure / Normal) → Flask API → Streamlit Dashboard
 
 ---
 
@@ -154,16 +144,20 @@ streamlit run dashboard.py
 
 ---
 
-## 📈 Results
+## 📊 Results
 
-| Model | Accuracy |
-|------|---------|
-| Random Forest | ~90% |
-| LSTM | **~99%** |
+The system was tested using simulated IoT sensor data.
 
-Key Observations:
-- LSTM performs better due to time-series learning
-- System accurately predicts failure patterns
+- The Random Forest model achieved approximately **99% accuracy**
+- The LSTM model also showed high accuracy on time-series data
+
+### Key Observations:
+- The system correctly predicts machine health (Healthy / Failure)
+- Sensor trends are visualized effectively
+- Failure distribution shows imbalance in dataset (more normal cases)
+- The system demonstrates how predictive maintenance can reduce downtime and maintenance costs
+
+The dashboard enables real-time prediction using sensor inputs.
 
 ---
 
@@ -171,6 +165,9 @@ Key Observations:
 
 ### 🔹 Dashboard UI
 ![Dashboard](images/dashboard.png)
+
+### 🔹 Prediction Output (Healthy Case)
+![Prediction](images/prediction_healthy.png)
 
 ### 🔹 Prediction Output (Failure Case)
 ![Prediction](images/prediction_failure.png)
@@ -190,13 +187,13 @@ Key Observations:
 
 Through this project, I learned:
 
-- Time-series modeling using LSTM
-- Difference between ML and DL models
-- Data preprocessing and feature engineering
-- Building end-to-end AI systems
-- Creating APIs using Flask
-- Developing dashboards using Streamlit
-- Debugging real-world environment issues (Python versions, dependencies)
+- Time-series modeling using LSTM  
+- Difference between Machine Learning and Deep Learning models  
+- Data preprocessing and feature engineering  
+- Building end-to-end AI systems  
+- Creating APIs using Flask  
+- Developing dashboards using Streamlit  
+- Debugging real-world environment issues  
 
 ---
 
@@ -213,5 +210,5 @@ It showcases how AI can transform traditional maintenance into intelligent, data
 
 ---
 
-## ⭐ If you like this project
+## ⭐ If you like this project  
 Give it a ⭐ on GitHub!
