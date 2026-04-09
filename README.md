@@ -93,8 +93,6 @@ The dataset contains sensor readings used for predictive maintenance:
 
 ## 🏗️ Architecture
 
-## 🏗️ Architecture
-
 Sensor Data (IoT Inputs)  
 → Data Preprocessing  
 → Feature Engineering  
